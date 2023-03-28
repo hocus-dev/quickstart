@@ -7,7 +7,7 @@ tasks:
     command: python3 hello-world.py
   - name: Second task
     init: echo "This executed during the prebuild 👷🏻‍♂️"
-    command: echo "This executes every time the workspace is started 🏃🏻‍♀️"
+    command: echo "This executes every time the workspace is started 🏃‍♀️"
 vscode:
   # You can specify extensions you want in your workspace here
   extensions:
