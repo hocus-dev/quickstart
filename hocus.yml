@@ -3,11 +3,11 @@ image:
   file: hocus.Dockerfile
 tasks:
   - name: First task
-    init: sleep 0.01
-    command: python3 hello-world.py
+    prebuild: sleep 0.01
+    workspace: python3 hello-world.py
   - name: Second task
-    init: echo "This executed during the prebuild 👷🏻‍♂️"
-    command: echo "This executes every time the workspace is started"
+    prebuild: echo "This executed during the prebuild 👷🏻‍♂️"
+    workspace: echo "This executes every time the workspace is started"
 vscode:
   # You can specify extensions you want in your workspace here
   extensions:
